@@ -8,6 +8,6 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/ProyectBootcamp1
 eureka:
-    client:
-      serviceUrl:
-          defaultZone: http://localhost:8099/eureka/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
