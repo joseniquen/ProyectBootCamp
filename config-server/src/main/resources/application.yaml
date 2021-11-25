@@ -10,4 +10,4 @@ spring:
           search-apth: config-data
 
   application:
-    name: config-service
+    name: config-server
