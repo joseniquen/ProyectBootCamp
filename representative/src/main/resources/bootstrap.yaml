@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: representative-signatory
+  cloud:
+    config:
+      enable: true
+      uri: http://localhost:8081
