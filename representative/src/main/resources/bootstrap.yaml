@@ -1,6 +1,6 @@
 spring:
   application:
-    name: representative-signatory
+    name: representative
   cloud:
     config:
       enable: true
