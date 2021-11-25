@@ -7,7 +7,7 @@ spring:
         git:
           default-label: config-server
           uri: https://github.com/joseniquen/config-server
-          search-apth: config-data
+          search-path: config-data
 
   application:
     name: config-server
