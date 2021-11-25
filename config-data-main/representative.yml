@@ -6,4 +6,4 @@ spring:
     name: representative
   data:
     mongodb:
-      uri: mongodb://localhost:27017/ProyectBootcamp
+      uri: mongodb://localhost:27017/ProyectBootcamp1
