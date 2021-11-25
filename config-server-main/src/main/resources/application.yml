@@ -8,10 +8,10 @@ spring:
         git:
           uri: https://github.com/joseniquen/config-server
           searchPaths: config-data
-#          default-label: master
+          default-label: master
 #          username: ${GITUSER}
 #          password: ${GITPASS}
-          default-label: main
+#          default-label: main
 #          clone-on-start: true 
 #        git:
 #          uri: https://github.com/arodriguezcu/Proyecto3-everis.git
