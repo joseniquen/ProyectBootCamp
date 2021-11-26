@@ -6,4 +6,11 @@ spring:
     name: representative
   data:
     mongodb:
-      uri: mongodb://localhost:27018/ProyectBootcamp
+      host: localhost
+      port: 27017
+      database: ProyectBootCamp
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
