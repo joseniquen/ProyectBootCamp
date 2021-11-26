@@ -1,9 +1,9 @@
 server:
   port: 8098
-  
+
 spring:
   application:
-    name: representative
+    name: representative-microservice
   data:
     mongodb:
       host: localhost
