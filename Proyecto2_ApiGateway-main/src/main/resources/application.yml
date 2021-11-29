@@ -1,0 +1,46 @@
+server:
+  port: 9998
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9999/eureka/
+        
+spring:
+  application:
+      name: api-gateway-service
+  cloud: 
+   gateway:
+    discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+
+    routes:
+      - id: customer_microservice
+        uri: 'http://localhost:8081'
+        predicates:
+          - Path=/customer/**
+          - Query=src,mobile
+      - id: banckcredit_microservice
+        uri: lb://banckcredit_microservice
+        predicates:
+          - Path=/credit/**
+      - id: banckaccount_microservice
+        uri: lb://account-microservice
+        predicates:
+          - Path=/account/**
+        filters: StripPrefix=2
+      - id: movementaccount_microservice
+        uri: lb://movementaccount_microservice
+        predicates:
+          - Path=/movement/account/**
+      - id: movementcredit_microservice
+        uri: lb://movementcredit_microservice
+        predicates:
+          - Path=/movement/credit/**
+      - id: representative_microservice
+        uri: lb://representative-microservice
+        predicates:
+          - Path=/representative-microservice/**
+        filters: StripPrefix=2
