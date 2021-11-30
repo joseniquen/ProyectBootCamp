@@ -1,0 +1,16 @@
+server:
+  port: 8084
+
+spring:
+    application:
+        name: movement-microservice
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: BankMovement
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9999/eureka/

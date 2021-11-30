@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+spring:
+    application:
+        name: credit-microservice
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: BankCredit
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9999/eureka/
