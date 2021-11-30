@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: customer-microservice
+  cloud:
+    config:
+      enable: true
+      uri: http://localhost:9997
+
