@@ -6,9 +6,7 @@ spring:
         name: account-microservice
     data:
         mongodb:
-            host: mongodb
-            port: 27017
-            database: BankAccount
+            uri: mongodb://mongodb:27017/BankAccount 
 
 eureka:
     client:
