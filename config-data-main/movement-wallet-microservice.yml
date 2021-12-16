@@ -1,0 +1,18 @@
+server:
+  port: 8088
+
+spring:
+    application:
+        name: movement-wallet-microservice
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: BankMovementWallet
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9999/eureka/
+
+            

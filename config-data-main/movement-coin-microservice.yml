@@ -1,0 +1,17 @@
+
+server:
+  port: 8089
+
+spring:
+    application:
+        name: movement-coin-microservice
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: BankCoin
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9999/eureka/

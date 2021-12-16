@@ -1,0 +1,16 @@
+server:
+  port: 8087
+
+spring:
+    application:
+        name: wallet-microservice
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: BankWallet
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9999/eureka/

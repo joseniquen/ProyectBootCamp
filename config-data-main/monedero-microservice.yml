@@ -1,0 +1,17 @@
+
+server:
+  port: 8091
+
+spring:
+    application:
+        name: monedero-microservice
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: BankCoin
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9999/eureka/
