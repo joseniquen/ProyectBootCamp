@@ -6,7 +6,7 @@ spring:
         name: account-microservice
     data:
         mongodb:
-            host: localhost
+            host: mongodb
             port: 27017
             database: BankAccount
 
